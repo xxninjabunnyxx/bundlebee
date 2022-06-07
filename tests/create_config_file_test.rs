@@ -22,8 +22,8 @@ fn create_config_file_test() {
     assert_eq!(config["imports"], json!([]));
     assert_eq!(config["exports"], json!([]));
     
-    match std::fs::remove_file(config_file_path) {
-        Ok(_) => (),
-        Err(e) => panic!("{}", e),
-    };
+    //match std::fs::remove_file(config_file_path) {
+     //   Ok(_) => (),
+     //   Err(e) => panic!("{}", e),
+    //};
 }
