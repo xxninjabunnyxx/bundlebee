@@ -4,7 +4,7 @@ use std;
 
 #[test]
 fn create_config_file_test() {
-    let config_file_path = "tests/test_files/create_config_file_test/bundlebee_config.json";
+    let config_file_path = "./tests/test_files/create_config_file_test/bundlebee_config.json";
     let b = BundleBee::new();
     b.create_config_file(config_file_path);
     assert!(std::path::Path::new(config_file_path).exists());
