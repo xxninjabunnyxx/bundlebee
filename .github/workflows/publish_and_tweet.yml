@@ -11,7 +11,7 @@ jobs:
         - name: Publish Crate.
           run: cargo publish --token ${{ secrets.CRATES_API_KEY }}
   tweet:
-    name: Tweet
+    #name: Tweet
     runs-on: ubuntu-latest
     needs: publish
     steps:
