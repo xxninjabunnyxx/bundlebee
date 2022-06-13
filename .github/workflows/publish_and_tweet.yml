@@ -11,9 +11,9 @@ jobs:
         - name: Publish Crate.
           run: cargo publish --token ${{ secrets.CRATES_API_KEY }}
   tweet:
-    #name: Tweet
+    name: Tweet
     runs-on: ubuntu-latest
-    needs: publish
+    #needs: publish
     steps:
       - uses: Eomm/why-don-t-you-tweet@v1
         with:
