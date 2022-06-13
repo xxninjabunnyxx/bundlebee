@@ -3,13 +3,6 @@ on:
   push:
     branches: [main]
 jobs:
-  test:
-    name: Test
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - name: Run unit and intergration tests.
-        run: cargo test
   publish:
       name: Publish
       needs: test
